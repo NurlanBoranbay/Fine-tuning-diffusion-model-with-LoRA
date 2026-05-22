@@ -1,0 +1,4 @@
+ITSV_MilesSuit, spiderverse style, spraypainted suit, dynamic mid-shot of a superhero swinging between buildings at night, neon city lights in the background, halftone dot patterns, comic book style --w 1024 --h 1024 --n low quality, blurry, deformed
+ATSV_MilesSuit, spiderverse style, sleek suit, close-up portrait looking directly at camera, dramatic lighting, colorful comic panel background with halftone effects --w 1024 --h 1024 --n low quality, blurry, deformed
+ITSV_MilesSuit, spiderverse style, spraypainted suit, character perched on a rooftop overlooking the city skyline at sunset, cape flowing in wind, vibrant colors with comic crosshatch patterns --w 1024 --h 1024 --n low quality, blurry, deformed
+ATSV_MilesSuit, spiderverse style, sleek suit, action pose mid-leap through a colorful dimensional portal, reality distortion glitch effects, chromatic aberration, pink and purple energy --w 1024 --h 1024 --n low quality, blurry, deformed

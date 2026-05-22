@@ -1,0 +1,34 @@
+# Virtual environments
+lora_train_env/
+venv/
+.venv/
+env/
+
+# Large model checkpoints and outputs (GitHub has a 100MB file limit)
+*.safetensors
+output/model/
+*.ckpt
+*.pt
+*.bin
+*.h5
+
+# Training logs and outputs
+output/logs/
+*.log
+slurm-*.out
+slurm-*.err
+
+# Sample generation directory (optional, but keep it if you want to commit generated samples)
+# output/samples/ is allowed to commit so we show results, but let's keep it unignored:
+# !output/samples/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
