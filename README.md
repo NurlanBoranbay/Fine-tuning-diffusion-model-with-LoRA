@@ -59,20 +59,5 @@ To run the training on the Nazarbayev University HPC cluster:
     ITSV_MilesSuit, spiderverse style, spraypainted suit, dynamic action shot of a superhero swinging between neon city buildings at night, comic book style, halftone patterns <lora:miles_morales_spiderverse_lora:0.8>
     ```
 
----
 
-## ⚙️ Recommended Git Workflow for this Repository
-
-### What to Commit:
-*   ✅ All configuration scripts (`.slurm`, `.sh`, `.toml`, `.py`, `.txt`).
-*   ✅ The dataset images and captions (`img/` directory).
-*   ✅ Evaluation/sample output images (`output/samples/`) showing model performance.
-
-### What NOT to Commit:
-*   ❌ **The Base SDXL Model**: (Stability AI's model is 6.9 GB and already hosted on Hugging Face).
-*   ❌ **The LoRA `.safetensors` file**: At **170.5 MB**, this file exceeds GitHub's **100 MB hard file size limit** and will block your push. 
-
-### Best Practice for Sharing the LoRA File:
-Upload the `miles_morales_spiderverse_lora.safetensors` model file to **[Hugging Face Models](https://huggingface.co/)** or **[Civitai](https://civitai.com/)** and link it below:
-
-*   🔗 **Download Trained LoRA weights:** `[Insert Hugging Face/Civitai Link Here]`
+*    **Download Trained LoRA weights:** `https://huggingface.co/nurlanboranbay/Fine-tuning-diffusion-model-with-LoRA/`
