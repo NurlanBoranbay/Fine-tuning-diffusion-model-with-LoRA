@@ -6,7 +6,7 @@ The training was performed on the **Nazarbayev University (NU) High-Performance 
 
 ---
 
-## 🎨 Model Details & Trigger Words
+## Model Details & Trigger Words
 
 This LoRA captures two specific suit styles along with the general chromatic aberration, halftone dots, and comic book aesthetic of the films:
 
@@ -19,7 +19,7 @@ This LoRA captures two specific suit styles along with the general chromatic abe
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 *   [train_lora.slurm](file:///c:/Users/A/Downloads/SpiderMan_LoRA_Project/train_lora.slurm) - SLURM batch script for multi-GPU training on the NU HPCS cluster.
 *   [training_config.toml](file:///c:/Users/A/Downloads/SpiderMan_LoRA_Project/training_config.toml) - Alternative `kohya-ss` training config.
@@ -31,7 +31,7 @@ This LoRA captures two specific suit styles along with the general chromatic abe
 
 ---
 
-## 🚀 Training on NU HPCS (SLURM)
+##  Training on NU HPCS (SLURM)
 
 To run the training on the Nazarbayev University HPC cluster:
 
@@ -49,7 +49,7 @@ To run the training on the Nazarbayev University HPC cluster:
 
 ---
 
-## 💻 Running Inference in Web UI (e.g., Stable Diffusion WebUI Forge / AUTOMATIC1111)
+##  Running Inference in Web UI (e.g., Stable Diffusion WebUI Forge / AUTOMATIC1111)
 
 1.  **Move the LoRA file**: Put the trained `miles_morales_spiderverse_lora.safetensors` file inside the `webui/models/Lora/` directory.
 2.  **Select Base Checkpoint**: Choose `sd_xl_base_1.0.safetensors` in the top-left checkpoint dropdown.
