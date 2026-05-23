@@ -11,7 +11,7 @@ The training was performed on the **Nazarbayev University (NU) High-Performance 
 This LoRA captures two specific suit styles along with the general chromatic aberration, halftone dots, and comic book aesthetic of the films:
 
 *   **LoRA Weight/Strength**: `0.8` (recommended)
-*   **Resolution**: `1024 x 1024` pixels (standard SDXL resolution)
+*   **Resolution**: `804 x 804` pixels (standard SDXL resolution)
 *   **Trigger Words**:
     *   `spiderverse style` (activates the general aesthetic, halftone textures, and comic book shading)
     *   `ITSV_MilesSuit, spraypainted suit` (activates the Into the Spider-Verse spraypainted suit style)
@@ -53,11 +53,17 @@ To run the training on the Nazarbayev University HPC cluster:
 
 1.  **Move the LoRA file**: Put the trained `miles_morales_spiderverse_lora.safetensors` file inside the `webui/models/Lora/` directory.
 2.  **Select Base Checkpoint**: Choose `sd_xl_base_1.0.safetensors` in the top-left checkpoint dropdown.
-3.  **Set Resolution**: Change Width and Height to **`1024 x 1024`**.
+3.  **Set Resolution**: Change Width and Height to **`804 x 804`**.
 4.  **Use prompt triggers**: Include the trigger words and the LoRA syntax in your prompt:
     ```text
-    ITSV_MilesSuit, spiderverse style, spraypainted suit, dynamic action shot of a superhero swinging between neon city buildings at night, comic book style, halftone patterns <lora:miles_morales_spiderverse_lora:0.8>
+    ITSV_MilesSuit, spiderverse style, spraypainted suit,full-body shot, dynamic action shot of a superhero swinging between neon city buildings at night, comic book style, halftone patterns <lora:miles_morales_spiderverse_lora:0.8>
     ```
+    Negative prompt
+    ```text
+    low-resolution, blurry, cinematic, realistic
+    ```
+5.  **Here are the 9 results that I got from single prompt with different seeds. For different prompt results you can look at sample dir
+<img width="2400" height="2400" alt="grid-0001 (1)" src="https://github.com/user-attachments/assets/224b1f3d-b15d-4595-9d3b-d0f190917ed5" />
 
 
 *    **Download Trained LoRA weights:** `https://huggingface.co/nurlanboranbay/Fine-tuning-diffusion-model-with-LoRA/`
