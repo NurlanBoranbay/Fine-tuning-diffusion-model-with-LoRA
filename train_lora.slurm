@@ -118,6 +118,8 @@ accelerate launch \
     --network_alpha=16 \
     --network_train_unet_only \
     --max_token_length=225 \
+    --noise_offset=0.0357 \
+    --adaptive_noise_scale=0.00357 \
     --multires_noise_iterations=6 \
     --multires_noise_discount=0.3 \
     --max_data_loader_n_workers=8 \
